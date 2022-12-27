@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div.user_container {
+            background-color: #f1f1f1;
+            border: solid 1px #e4e4e4;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        div.user_container div.users {
+            background: rgb(38, 131, 131);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        div.user_container div.users h3 {
+            line-height: 1.5;
+            color:#fff;
+        }
+        div.user_container div.users p {
+            line-height: 1.5;
+            color:#fff;
+        }
+        div.user_container div.users p  > span{
+            font-size: large;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="getUsers">Get Users</button>
+    <select name="" id="dgetUsers">
+        <option value="">select how many users do you want to fetch ..</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+    </select>
+    <select name="" id="userslist"></select>
+    <div class="user_container" id="user_container">
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
